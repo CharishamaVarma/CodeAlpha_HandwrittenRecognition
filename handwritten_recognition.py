@@ -1,4 +1,3 @@
-
 import tensorflow as tf
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.models import Sequential
@@ -26,3 +25,7 @@ model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accur
 model.fit(X_train, y_train, epochs=5, batch_size=128, validation_split=0.1)
 loss, acc = model.evaluate(X_test, y_test)
 print(f"Test Accuracy: {acc:.4f}")
+
+
+
+
